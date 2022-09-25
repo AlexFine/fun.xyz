@@ -223,11 +223,13 @@ header ul li {
     text-justify: inter-word;
 }
 .app a {
-    padding-top: 0;
-    font-size: 16px;
-    margin: 0 8px;
-    margin-bottom: 0;
-    opacity: 1;
+    /*padding-top: 0;*/
+    /*font-size: 16px;*/
+    /*margin: 0 8px;*/
+    /*margin-bottom: 0;*/
+    /*opacity: 1;*/
+    font-weight: 700;
+
 }
 .previewed .content {
     text-align: left;
