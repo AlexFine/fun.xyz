@@ -77,11 +77,11 @@ header.footer {
     margin-right: auto;
     margin-left: auto;
 }
+
 .header {
-    position: fixed !important;
+    position: fixed;
     background: white;
     z-index: 100;
-
 }
 
 header h3 {
@@ -143,6 +143,19 @@ header ul li {
     padding:90px;
     padding-top: 180px;
     text-align: left;
+}
+
+.app-mobile {
+    text-align: left;
+}
+.app-mobile .mobile-section {
+    padding-top: 10vh;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.text-center {
+    text-align: center !important;
 }
 
 .app .row:after {
@@ -302,6 +315,10 @@ header ul li {
         padding-top: 210px;
         min-height: auto;
     }
+    .app-mobile {
+        padding: 80px 12px;
+        /*padding-top: 210px;*/
+    }
     .previewed .content {
         padding-left: 40px;
     }
@@ -315,5 +332,16 @@ header ul li {
     }
 }
 @media screen and (max-width: 480px) {
-
+    header.footer {
+        position: relative;
+    }
+    header.header {
+        position: relative;
+    }
+    .img {
+        width: 100%;
+        min-width: 0;
+        border-radius: 15px;
+        margin-top: 15px;
+    }
 }
