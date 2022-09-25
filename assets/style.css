@@ -219,6 +219,8 @@ header ul li {
     padding-top: 8px;
     opacity: 0.8;
     margin-bottom: 12px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 .app a {
     padding-top: 0;
