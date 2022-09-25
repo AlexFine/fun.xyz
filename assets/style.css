@@ -287,6 +287,10 @@ header ul li {
         display: inline-block;
         padding: 12px;
     }
+    header .nav {
+        padding: 12px;
+        padding-top: 0;
+    }
 
     .footer .nav {
         margin-bottom: 24px;
@@ -295,6 +299,7 @@ header ul li {
         margin-bottom: 24px;
         border-radius: 24px;
         padding: 80px 24px;
+        padding-top: 210px;
         min-height: auto;
     }
     .previewed .content {
