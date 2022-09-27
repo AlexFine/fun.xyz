@@ -410,14 +410,14 @@ header ul li {
         padding: 0;
         list-style: none;
         clear: both;
+        height: 0px;
         width: auto;
         text-align: center;
-        height: 0px;
         overflow: hidden;
-        transition: height .4s ease;
+        transition: height .25s ease;
         z-index: 120;
-        -webkit-transition: all 0.3s ease;
-        transition: all 0.3s ease;
+        -webkit-transition: all 0.25s ease;
+        transition: all 0.25s ease;
     }
 
     .mobile-menu a:first-child {
@@ -425,10 +425,10 @@ header ul li {
     }
 
     .mobile-menu a:last-child {
-        margin-bottom: 40px;
+        margin-bottom: calc(100vh - 300px);
     }
 
-    .link1 {
+    .mobile-link {
         width: 100%;
         margin: 0;
         padding: 10px 0;
