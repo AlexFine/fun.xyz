@@ -50,6 +50,7 @@ body {
     font-weight: 600;
     overscroll-behavior-y: none;
 }
+<<<<<<< HEAD
 
 div .menu-line {
     width: 20px;
@@ -58,6 +59,11 @@ div .menu-line {
     margin-bottom: 4px;
 }
 
+=======
+::selection {
+    background: rgba(0,0,0,0.15);
+}
+>>>>>>> 3142fbbf311a78a9f4cf6fa8490d944c840871a6
 a, .hover {
     color: inherit;
     -webkit-transition:all .25s ease;-moz-transition:all .25s ease;-ms-transition:all .25s ease;-o-transition:all .25s ease;transition:all .25s ease;
@@ -101,7 +107,11 @@ header h3 {
 header h3 svg {
     display: inline-block;
     vertical-align: text-top;
-    margin-right: 8px;
+    /*margin-right: 8px;*/
+}
+.offset {
+    width: 40px;
+    height: 40px;
 }
 header h3 span {
     display: none;
@@ -138,7 +148,8 @@ header ul li {
     width: 100%;
     background-color: #edeef0;
     border-radius: 48px;
-    min-height: max(400px, calc(100vh - 120px));
+    /*min-height: max(400px, calc(100vh - 120px));*/
+    min-height: max(400px, 100vh);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,6 +161,7 @@ header ul li {
     justify-content: left;
     padding:90px;
     padding-top: 180px;
+    padding-bottom: 180px;
     text-align: left;
 }
 
@@ -274,6 +286,9 @@ header ul li {
 #labs, #prototyper {
     background-color: #2c2c2c;
     color: #fff;
+}
+.dark {
+    display: none;
 }
 
 @media all and (min-width: 480px) {
@@ -442,9 +457,47 @@ header ul li {
 
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 1040px) {
     .inner {
         width: 100%;
         padding: 0 40px;
     }
 }
+=======
+@media (prefers-color-scheme: dark) {
+    body {
+        background: black;
+    }
+    header {
+        background: black;
+    }
+    header.header {
+        background: black;
+    }
+    h2 {
+        color: rgba(200, 200, 200, 1.0);
+    }
+    p {
+        color: rgba(200, 200, 200, 1.0);
+    }
+    .app .odsy-mark {
+        color: rgba(255, 255, 255, 0.30);
+    }
+    a {
+        color: rgba(200, 200, 200, 1.0);
+    }
+    .copyright {
+        color: rgba(255, 255,255, 0.30);
+    }
+    .light {
+        display: none;
+    }
+    .dark {
+        display: block;
+    }
+    ::selection {
+        background: rgba(255,255,255,0.15);
+    }
+}
+>>>>>>> 3142fbbf311a78a9f4cf6fa8490d944c840871a6
