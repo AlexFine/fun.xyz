@@ -51,12 +51,6 @@ body {
     overscroll-behavior-y: none;
 }
 
-div .menu-line {
-    /*width: 20px;*/
-    /*height: 3px;*/
-    /*background-color: black;*/
-    /*margin-bottom: 4px;*/
-}
 
 ::selection {
     background: rgba(0,0,0,0.15);
@@ -120,7 +114,7 @@ header ul {
     font-size: 0;
 }
 header ul li {
-    /* display: inline-block; */
+     display: inline-block;
     margin: 0 16px;
     font-size: 16px;
 }
@@ -293,11 +287,8 @@ header ul li {
 
 @media all and (min-width: 480px) {
     li {
-        display: inline-block;
-    }
-
-    .menu-line {
-        display: none;
+        /*display: inline-block;*/
+        /*display: flex;*/
     }
 }
 
@@ -312,6 +303,17 @@ header ul li {
 
     .header {
         flex-direction: column;
+    }
+
+    header.footer {
+        display: block;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    header .nav-footer {
+        padding: 18px;
+        padding-top: 0px;
     }
 
     .menu {
