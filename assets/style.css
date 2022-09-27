@@ -50,6 +50,14 @@ body {
     font-weight: 600;
     overscroll-behavior-y: none;
 }
+
+div .menu-line {
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 4px;
+}
+
 a, .hover {
     color: inherit;
     -webkit-transition:all .25s ease;-moz-transition:all .25s ease;-ms-transition:all .25s ease;-o-transition:all .25s ease;transition:all .25s ease;
@@ -105,7 +113,7 @@ header ul {
     font-size: 0;
 }
 header ul li {
-    display: inline-block;
+    /* display: inline-block; */
     margin: 0 16px;
     font-size: 16px;
 }
@@ -268,86 +276,175 @@ header ul li {
     color: #fff;
 }
 
+@media all and (min-width: 480px) {
+    li {
+        display: inline-block;
+    }
+
+    .menu-line {
+        display: none;
+    }
+}
+
+@media all and (max-width: 480px) {
+
+    .nav-elem {
+        display: block;
+        border-top: 1px solid black;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    .nav {
+        width: 100%;
+        padding-top: 10px;
+        display: none;
+    }
+
+    .header {
+        padding: 20px;
+    }
+
+    h3 {
+        width: 100%;
+    }
+
+    .active {
+        display: block;
+    }
+
+
+
+
+
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    /* Hamburger */
+    .navigation {
+        width: 100%;
+    }
+    
+    .hamburger1 {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        height: 30px;
+        /* margin: 10px; */
+        display: -ms-grid;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+        z-index: 120;
+    }
+    
+    .hamburger1 div {
+        background-color: black;
+        position: relative;
+        width: 30px;
+        height: 5px;
+        margin-top: 7px;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    #toggle1 {
+        display: none;
+    }
+    
+    #toggle1:checked + .hamburger1 .top {
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        margin-top: 22.5px;
+    }
+    
+    #toggle1:checked + .hamburger1 .meat {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        margin-top: -5px;
+    }
+    
+    #toggle1:checked + .hamburger1 .bottom {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+    
+    #toggle1:checked ~ .menu1 {
+        height: 800px;
+        /* height: 100vh; */
+    }
+    
+    
+    /* Menu */
+    .menu1 {
+        width: 100%;
+        margin: 0;
+        display: -ms-grid;
+        display: grid;
+        grid-template-rows: 1fr repeat(4, 0.5fr);
+        grid-row-gap: 25px;
+        padding: 0;
+        list-style: none;
+        clear: both;
+        width: auto;
+        text-align: center;
+        height: 0px;
+        overflow: hidden;
+        transition: height .4s ease;
+        z-index: 120;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+    
+    .menu1 a:first-child {
+        margin-top: 40px;
+    }
+    
+    .menu1 a:last-child {
+        margin-bottom: 40px;
+    }
+    
+    .link1 {
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .kbutton-nav {
+        height: 100vh;
+    }
+
+}
+
 @media screen and (max-width: 1040px) {
     .inner {
         width: 100%;
         padding: 0 40px;
-    }
-}
-@media screen and (max-width: 772px) {
-    body {
-        background-image: none;
-    }
-    .inner {
-        padding: 0 24px;
-    }
-
-    header {
-        padding: 24px;
-        justify-content: space-around;
-    }
-    .header .offset, .footer .logo {
-        display: none;
-    }
-    header.footer {
-        display: block;
-        text-align: center;
-        padding: 40px 24px;
-    }
-    header.header {
-        display: block;
-        text-align: center;
-    }
-    header h3 svg {
-        display: none;
-    }
-    header h3 span {
-        display: inline-block;
-        padding: 12px;
-    }
-    header .nav {
-        padding: 12px;
-        padding-top: 0;
-    }
-
-    .footer .nav {
-        margin-bottom: 24px;
-    }
-    .app {
-        margin-bottom: 24px;
-        border-radius: 24px;
-        padding: 80px 24px;
-        padding-top: 210px;
-        padding-bottom: 210px;
-        min-height: auto;
-    }
-    .app-mobile {
-        padding: 80px 12px;
-        /*padding-top: 210px;*/
-    }
-    .previewed .content {
-        padding-left: 40px;
-    }
-    .app h2 {
-        font-size: 24px;
-        line-height: 32px;
-    }
-    .app p, .app a {
-        font-size: 16px;
-        padding-top: 4px;
-    }
-}
-@media screen and (max-width: 480px) {
-    header.footer {
-        position: relative;
-    }
-    header.header {
-        position: relative;
-    }
-    .img {
-        width: 100%;
-        min-width: 0;
-        border-radius: 15px;
-        margin-top: 15px;
     }
 }

@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
     <title>fun.xyz</title>
     <link rel="icon" type="image/png" href="assets/images/favicon.svg" />
     <meta name="description" content="fun.xyz – We build wallets that are impossible to create on today's blockchains." />
@@ -26,19 +26,14 @@
             name="twitter:image"
             content="https://fun.xyz/assets/images/website_preview.jpg"
     />
-
-    <script type="text/javascript">
-        if (screen.width <= 481) {
-            window.location = "/Users/kalilfine/Desktop/code/fun.xyz/mobile.html";
-        }
-    </script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
 </head>
+
 <body class="animate__animated animate__fadeIn">
 <header class="header">
     <h3>
-        <a href="index.html"
-        >
+        <a href="#">
             <svg width="40" height="40" viewBox="0 0 253 253" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>Logo</title>
                 <g id="Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -48,32 +43,48 @@
                     </g>
                 </g>
             </svg>
-            <span>fun.xyz</span></a
-        >
+        </a>
     </h3>
-    <ul class="nav">
-        <li><a href="about.html">About</a></li>
-        <li><a href="mission.html">Mission</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="careers.html">Careers</a></li>
+    <ul class="nav" id="navList">
+        <li class="nav-elem"><a href="about.html">About</a></li>
+        <li class="nav-elem"><a href="mission.html">Mission</a></li>
+        <li class="nav-elem"><a href="team.html">Team</a></li>
+        <li class="nav-elem"><a href="careers.html">Careers</a></li>
     </ul>
 
-    <h3 class="offset">
-        <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-        >
-            <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20ZM10.9969 16.8033C14.3214 16.3204 16.875 13.4584 16.875 10C16.875 6.5416 14.3214 3.67963 10.9969 3.19674C10.7004 3.15368 10.5521 3.13215 10.3988 3.19165C10.2758 3.23941 10.1459 3.35182 10.0809 3.46672C10 3.60986 10 3.78158 10 4.125V15.875C10 16.2184 10 16.3901 10.0809 16.5333C10.1459 16.6482 10.2758 16.7606 10.3988 16.8084C10.5521 16.8679 10.7004 16.8463 10.9969 16.8033Z"
-                    fill="#fff"
-            />
-        </svg>
-    </h3>
+    <div id="navbar" class="navigation" role="navigation">
+        
+        <input id="toggle1" type="checkbox"/>
+        <label class="hamburger1" for="toggle1">
+            <div class="top"></div>
+            <div class="meat"></div>
+            <div class="bottom"></div>
+        </label>
+    
+        <nav class="menu1">
+            <a class="link1" href="about.html">About</a>
+            <a class="link1" href="mission.html">Mission</a>
+            <a class="link1" href="team.html">Team</a>
+            <a class="link1" href="careers.html">Careers</a>
+            <a class="link1"></a>
+            <a class="link1"></a>
+            <a class="link1"></a>
+            <a class="link1"></a>
+            <a class="link1"></a>
+            <a class="link1"></a>
+            <a class="link1"></a>
+            <a class="link1"></a>
+            <a class="link1"></a>
+            <a class="link1"></a>
+            <a class="link1"></a>
+            <!-- <a class="link1" href="">Hello</a>
+            <a class="link1" href="">Hello</a>
+            <a class="link1" href="">Hello</a>
+            <a class="link1" href="">Hello</a> -->
+        </nav>
+
+    </div>
+
 </header>
 
 <section id="apps" class="inner">
@@ -82,23 +93,16 @@
             <div class="text">
                 <h2>Question The Premise</h2>
                 <p style="text-align: center;">We build wallets that are impossible to create on today's blockchains.</p>
-<!--                <p class="odsy-mark">AN ODSY PROJECT. SUMMER '23.</p>-->
-<!--                <p class="odsy-mark">BUILT ON ODSY. SUMMER '23.</p>-->
                 <p class="odsy-mark" style="text-align: center;">SUMMER '23</p>
             </div>
         </div>
     </div>
-
-
-
-
-
 </section>
 
 <header class="footer inner">
-    <ul class="nav">
+    <ul class="nav-footer">
 
-        <li><a class="copyright" href="https://read.cv/teams/diagram">© 2022 Medici Financial Inc.</a></li>
+        <li><a class="copyright">© 2022 Medici Financial Inc.</a></li>
     </ul>
 
     <ul>
