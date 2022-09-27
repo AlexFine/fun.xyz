@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>fun.xyz</title>
     <link rel="icon" type="image/png" href="assets/images/favicon-dark.svg" />
     <meta name="description" content="fun.xyz – We build wallets that are impossible to create on today's blockchains." />
@@ -26,18 +26,14 @@
             name="twitter:image"
             content="https://fun.xyz/assets/images/website_preview.jpg"
     />
-
-    <script type="text/javascript">
-        if (screen.width <= 481) {
-            window.location = "/Users/kalilfine/Desktop/code/fun.xyz/mobile.html";
-        }
-    </script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
 </head>
+
 <body class="animate__animated animate__fadeIn">
 <header class="header">
     <h3>
-        <a href="index.html"
+        <a href="#"
         >
             <svg class="light" width="40" height="40" viewBox="0 0 253 253" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>Logo</title>
@@ -60,12 +56,45 @@
             <span>fun.xyz</span></a
         >
     </h3>
-    <ul class="nav">
-        <li><a href="about.html">About</a></li>
-        <li><a href="mission.html">Mission</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="careers.html">Careers</a></li>
+    <ul class="nav nav-desktop" id="navList">
+        <li class="nav-elem"><a href="about.html">About</a></li>
+        <li class="nav-elem"><a href="mission.html">Mission</a></li>
+        <li class="nav-elem"><a href="team.html">Team</a></li>
+        <li class="nav-elem"><a href="careers.html">Careers</a></li>
     </ul>
+
+    <div id="navbar" class="navigation mobile-nav" role="navigation">
+
+        <input id="toggle1" type="checkbox"/>
+        <label class="hamburger1" for="toggle1">
+            <div class="top"></div>
+            <div class="meat"></div>
+            <div class="bottom"></div>
+        </label>
+
+        <nav class="mobile-menu">
+            <a class="link1" href="about.html">About</a>
+            <a class="link1" href="mission.html">Mission</a>
+            <a class="link1" href="team.html">Team</a>
+            <a class="link1" href="careers.html">Careers</a>
+<!--            <a class="link1"></a>-->
+<!--            <a class="link1"></a>-->
+<!--            <a class="link1"></a>-->
+<!--            <a class="link1"></a>-->
+<!--            <a class="link1"></a>-->
+<!--            <a class="link1"></a>-->
+<!--            <a class="link1"></a>-->
+<!--            <a class="link1"></a>-->
+<!--            <a class="link1"></a>-->
+<!--            <a class="link1"></a>-->
+<!--            <a class="link1"></a>-->
+            <!-- <a class="link1" href="">Hello</a>
+            <a class="link1" href="">Hello</a>
+            <a class="link1" href="">Hello</a>
+            <a class="link1" href="">Hello</a> -->
+        </nav>
+
+    </div>
 
     <h3 class="offset">
 
@@ -78,22 +107,14 @@
             <div class="text">
                 <h2>Question The Premise</h2>
                 <p style="text-align: center;">We build wallets that are impossible to create on today's blockchains.</p>
-<!--                <p class="odsy-mark">AN ODSY PROJECT. SUMMER '23.</p>-->
-<!--                <p class="odsy-mark">BUILT ON ODSY. SUMMER '23.</p>-->
                 <p class="odsy-mark" style="text-align: center;">SUMMER '23</p>
             </div>
         </div>
     </div>
-
-
-
-
-
 </section>
 
 <header class="footer inner">
-    <ul class="nav">
-
+    <ul class="nav-footer">
         <li><a class="copyright" href="https://read.cv/teams/diagram">© 2022 The Fun Company, Inc.</a></li>
     </ul>
 
