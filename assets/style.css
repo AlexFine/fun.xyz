@@ -165,6 +165,10 @@ header ul li {
     text-justify: inter-word;
 }
 
+.mobile-section {
+    display: none;
+}
+
 .text-center {
     text-align: center !important;
 }
@@ -285,14 +289,67 @@ header ul li {
     display: none;
 }
 
-@media all and (min-width: 480px) {
-    li {
-        /*display: inline-block;*/
-        /*display: flex;*/
-    }
+.social-media-row img {
+    height: 22px;
+    margin-top: 8px;
+    margin-right: 8px;
+    opacity: 0.50;
 }
 
+
+@media screen and (max-width: 1040px) {
+    .inner {
+        width: 100%;
+        padding: 0 40px;
+    }
+}
+@media all and (max-width: 772px) {
+    .mobile-section {
+        display: block;
+    }
+    .team-row {
+        display: none;
+    }
+
+}
 @media all and (max-width: 480px) {
+    .desktop-only {
+        display: none;
+    }
+    .social-media-row img {
+        height: 20px;
+    }
+    .app-team {
+        padding: 0px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .app-team p {
+        padding-top: 0px;
+    }
+
+    .app-team img {
+        margin-bottom: 8px;
+    }
+
+    .app p, .app a{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .app h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .inner {
+        padding: 0px 30px;
+    }
+
+    .about-section {
+        padding: 0px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
 
     .nav-elem {
         display: block;
@@ -356,7 +413,6 @@ header ul li {
         right: 20px;
         top: 27px;
         height: 30px;
-        /* margin: 10px; */
         display: -ms-grid;
         display: grid;
         grid-template-rows: repeat(3, 1fr);
@@ -397,7 +453,6 @@ header ul li {
     }
 
     #toggle1:checked ~ .mobile-menu {
-        /*height: 800px;*/
          height: 100vh;
     }
 
@@ -446,13 +501,7 @@ header ul li {
 
 }
 
-@media screen and (max-width: 1040px) {
-    .inner {
-        width: 100%;
-        padding: 0 40px;
-    }
-}
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark)  {*/
     body {
         background: black;
     }
@@ -463,6 +512,9 @@ header ul li {
         background: black;
     }
     h2 {
+        color: rgba(200, 200, 200, 1.0);
+    }
+    h3 {
         color: rgba(200, 200, 200, 1.0);
     }
     p {
@@ -486,4 +538,7 @@ header ul li {
     ::selection {
         background: rgba(255,255,255,0.15);
     }
-}
+    .hamburger1 div {
+        background: white;
+    }
+/*}*/
