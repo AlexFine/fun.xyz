@@ -313,6 +313,9 @@ header ul li {
 
 }
 @media all and (max-width: 480px) {
+    header {
+        position: relative !important;
+    }
     .desktop-only {
         display: none;
     }
@@ -321,8 +324,8 @@ header ul li {
     }
     .app-team {
         padding: 0px;
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
     .app-team p {
         padding-top: 0px;
@@ -347,8 +350,8 @@ header ul li {
 
     .about-section {
         padding: 0px;
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     .nav-elem {
@@ -366,6 +369,7 @@ header ul li {
         display: block;
         text-align: center;
         padding: 40px 20px;
+        position: relative !important;
     }
 
     header .nav-footer {
